@@ -1,0 +1,528 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;800&display=swap');
+
+
+html {
+  scroll-behavior:smooth;
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito', sans-serif;
+    font-size: 20px;
+}
+
+body{
+    background-color: #000000;
+}
+
+
+
+
+
+
+
+/*Header-Nav Configuración*/
+
+.header{
+  background-color: rgba(31, 31, 31, 0.582);
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 85px;
+  padding: 5 10%;
+
+    
+}
+
+.header .logo{
+    cursor: pointer;
+    margin-right: auto;
+    margin-left: 15px;
+    margin-top: 10px;
+}
+
+.header .logo img{
+    height: 100px;
+    width: 150px;
+    transition: all 0.3s;
+}
+
+.header .logo img:hover{
+    transform: scale(1.2);
+}
+
+.header .nav-links{
+    list-style: none; 
+    margin-right: 15px; 
+}
+
+.header .nav-links li{
+    display: inline-block;
+    padding: 0 10px;    
+}
+
+.header .nav-links li:hover{
+    transform: scale(1.1);
+}
+
+.header .nav-links a{
+    font-size: 700;
+    color: #eceff1;
+    text-decoration: none;
+     
+}
+
+.header .nav-links li a:hover{
+    color: rgb(129, 129, 129);
+}
+
+
+
+
+
+
+
+/*Inicio Configuración*/
+
+
+#Banner{
+  align-items: center;
+    width: 1905px;
+    height: 900px;
+    display: block;
+}
+
+
+
+
+
+
+
+/*Sobre la Serie Configuración*/
+
+.contenido-serie {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  padding: 40px;
+}
+.contenido-serie h1{
+  margin-left: 150px;
+}
+
+.serie{
+  display: flex;
+  align-items: center;
+  gap: 150px;
+}
+
+.serie img {
+  width: 950px;
+  height: auto;
+  border-radius: 10px;
+}
+
+.texto {
+  max-width: 600px;
+  padding: 20px;
+  color: white;
+  text-align: justify;
+}
+
+.productores{
+  display: flex;
+  align-items: center;
+  gap: 150px;
+}
+.productores img{
+  width: 800px;
+  height: auto;
+  border-radius: 10px;
+}
+
+
+
+
+
+
+
+
+/*Reparto Configuración*/
+.reparto {
+  padding: 40px;
+  color: white;
+  font-family: 'Nunito', sans-serif;
+}
+
+.personaje,
+.actor {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 40px;
+}
+
+.texto-personaje, 
+.texto-actor {
+  flex: 1;
+  max-width: 50%;
+  text-align: left;
+  padding: 0 80px;
+}
+
+.texto-personaje h2 {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+.texto-personaje p {
+  line-height: 1.6;
+}
+
+.imagen-personaje,
+.imagen-actor {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.imagen-personaje img,
+.imagen-actor img {
+  width: 450px;
+  height: auto;
+  border-radius: 15px;
+}
+
+.texto-actor {
+  flex: 1;
+  max-width: 50%;
+  text-align: left;
+}
+
+.texto-actor h2 {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+.texto-actor p {
+  line-height: 1.6;
+}
+
+
+
+/*Nav de Personjaes Configuración*/
+
+.personajes-nav {
+  background-color:  rgba(0, 0, 0, 0.582);
+  text-align: center;
+  padding: 15px 0;
+  margin-bottom: 40px;
+}
+
+.personajes-nav ul {
+  list-style: none;
+  display: inline-flex;
+  gap: 30px;
+  padding: 0;
+  margin: 0;
+}
+.personajes-nav li:hover{
+  transform: scale(1.1);
+}
+
+.personajes-nav a {
+  text-decoration: none;
+  color: white;
+}
+
+.personajes-nav a:hover {
+  color: rgb(129, 129, 129);
+}
+
+
+
+
+
+
+
+
+
+/*Temporadas Configuración*/
+
+.capitulo{
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  margin: 40px auto;
+  max-width: 1000px;
+  padding: 20px;
+}
+.capitulo img{
+  width: 300px;
+  height: auto;
+  border-radius: 10px;
+}
+.capitulo-contenido{
+  flex: 1;
+  padding-right: 20px;
+}
+.capitulo-contenido h2{
+  font-size: 24px;
+  color: white;
+  margin-bottom: 10px;
+}
+.capitulo-contenido p{
+  font-size: 18px;
+  color: white;
+  line-height: 1.5;
+}
+
+#tem2{
+  display: flex;
+  align-items: center;
+  color: white;
+  line-height: 10;
+  margin: 40px auto;
+  max-width: 1000px;
+  padding-left: 350px;
+}
+
+
+
+
+
+
+/*Eventos Configuración*/
+
+.eventos {
+  padding: 60px 20px;
+  background-color: #000;
+  color: white;
+}
+
+.titulo-eventos {
+  text-align: center;
+  font-size: 50px;
+  margin-bottom: 60px;
+}
+
+.evento-imagen {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 50px;
+  gap: 30px;
+  align-items: center;
+  justify-content: center;
+}
+
+.evento-imagen img {
+  max-width: 400px;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
+}
+
+.evento-texto {
+  max-width: 600px;
+  padding: 10px;
+}
+
+.evento-texto h2 {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.evento-texto p {
+  font-size: 20px;
+  line-height: 1.6;
+  text-align: justify;
+}
+
+/*Curiodidades Configuración*/
+
+.curiosidades {
+  background-color: #000000;
+  color: white;
+  padding: 50px 20px;
+}
+
+.titulo-curiosidades {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 80px;
+}
+
+.curiosidad {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+  gap: 20px;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.curiosidad p {
+  font-size: 1.1rem;
+  line-height: 1.4;
+  text-align: justify;
+}
+
+#oda{
+  width: 400px;
+  height: 130px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+#merry{
+  width: 305px;
+  height: 130px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+#garp{
+  width: 305px;
+  height: 130px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+
+
+
+
+
+
+
+/*Footer Configuración*/
+
+  
+footer {
+  background-color: rgba(31, 31, 31, 0.582);
+  color: white;
+  padding: 40px 80px;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+
+
+
+/*Redes Configuración*/
+
+.redes {
+  flex: 1;
+  max-width: 300px;
+}
+
+.redes h2 {
+  margin-bottom: 10px;
+  font-size: 1.4em;
+}
+
+.redes ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.redes ul li {
+  display: flex;
+}
+
+.redes ul li a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: white;
+  text-decoration: none;
+  font-size: 1em;
+}
+
+.redes ul li a:hover {
+  color: #aaaaaa;
+}
+
+.redes ul li a img {
+  width: 28px;
+  height: 28px;
+}
+
+
+
+
+/*Formulario Configuración*/
+
+.comentarios {
+  flex: 1;
+  max-width: 600px;
+}
+
+.comentarios h2 {
+  font-size: 1.4em;
+  margin-bottom: 10px;
+}
+
+.comentarios form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.comentarios input,
+.comentarios textarea {
+  padding: 10px;
+  border: none;
+  border-radius: 15px;
+  font-size: 1em;
+}
+
+.comentarios textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.comentarios button {
+  padding: 10px;
+  background-color: #474747;
+  color: white;
+  font-size: 1em;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+.comentarios button:hover {
+  background-color: #45a049;
+}
+
+
+
+
+
+
+
+/*Volver a Inicio*/
+
+.volver-inicio {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background-color: #47474763;
+  color: white;
+  font-size: 20px;
+  padding: 10px 17px;
+  border-radius: 50%;
+  text-decoration: none;
+  z-index: 1002;
+  opacity: 0.6;
+}
