@@ -35,42 +35,39 @@
  
     <!--Serie-->
 
-    <section class="contenido-serie">
-        <div class="serie">
-            <div class="texto">
 
-                <h1>¿De qué trata One Piece?</h1>
-                <br>
-                <p>La serie sigue las aventuras de los Piratas de Sombrero de Paja ("Banda de Sombrero de Paja" en España) en busca del "One Piece",
-                    un tesoro legendario que convertirá presuntamente a su capitán, Monkey D. Luffy, en el "Rey de los Piratas". Pero la Marina está detrás de su barco 
-                    y no son la única tripulación que busca el One Piece. Armados con sus habilidades y una amistad inquebrantable, los Piratas de Sombrero de Paja están listos 
-                    para el viaje y para luchar juntos por sus sueños.</p>
-                    <br>
-                    <p>One Piece es una serie de imagen real basada en el manga homónimo, producida por 
-                        Tomorrow Studios para el servicio de streaming Netflix. Fue anunciada el 21 de julio de 2017 
-                        por Shueisha en la Tokyo One Piece Tower, para conmemorar el 20° aniversario del manga. La primera temporada se estrenó el 31 de agosto de 2023 y el 14 de septiembre de 2023, 
-                        se anunció que la serie había sido renovada para una segunda temporada, aparentemente pensada para estrenarse a mediados de 2025. Además de adaptar contenido del manga, la serie también 
-                        adapta algunos elementos originarios del anime producido por Toei Animation.</p>
-            </div>
-              <img src="./img/Tripulacion.jpg" alt="Sombreros de Paja">
-        </div>
+    <section class="Sobre">
+    
+ <div class="serie">
+  
+  <h1>¿De qué trata One Piece?</h1>
+  <br>
+  <p>La serie sigue las aventuras de los Piratas de Sombrero de Paja ("Banda de Sombrero de Paja" en España) en busca del "One Piece",
+   un tesoro legendario que convertirá presuntamente a su capitán, Monkey D. Luffy, en el "Rey de los Piratas". Pero la Marina está detrás de su barco 
+    y no son la única tripulación que busca el One Piece. Armados con sus habilidades y una amistad inquebrantable, los Piratas de Sombrero de Paja están listos 
+   para el viaje y para luchar juntos por sus sueños.</p>
+   <br>
+   <br>
+<img src="./img/Tripulacion.jpg" alt="Sombreros de Paja">
 
-        
-        
-        
-        <!--Productores-->
- 
-        <div class="productores">
-            <div class="texto">
-                <h1>¿Quienes son los productores?</h1>
-                <br>
-                <p>Eiichiro Oda trabajó como productor ejecutivo de la serie, junto con el director ejecutivo de Tomorrow Studios, Marty Adelstein, y la presidenta Becky Clements. Steven Maeda y 
+<br>
+ </div>
+
+ <!--Productores-->
+
+ <div class="productores">
+  <h1>¿Quienes son los productores?</h1>
+  <p>Eiichiro Oda trabajó como productor ejecutivo de la serie, junto con el director ejecutivo de Tomorrow Studios, Marty Adelstein, y la presidenta Becky Clements. Steven Maeda y 
                     Matt Owens fueron los showrunners de la primera temporada, trabajando como escritores y productores ejecutivos. Otros escritores incluyen a Diego Gutiérrez, Allison Weintraub, 
                     Ian Stokes, Lindsay Gelfand, Laura Jacqmin, Jason Cho, Damani Johnson y Tom Hyndman.</p>
-             </div>
-            <img src="./img/steve&matt.jpg" alt="Los showrunners">
-             </div>
+<img src="./img/steve&matt.jpg" alt="Los showrunners">
+
+ </div>
     </section>
+    
+   <!--Soundtrack-->
+
+   <audio id="musica-fondo" controls autoplay loop src="./msc/I'm Gonna Be King Of The Pirates  We Are!  One Piece  Official Soundtrack  Netflix.mp3"></audio>
    
 
 
@@ -82,39 +79,39 @@
       <!--Ir a Footer-->
      <a href="#contactos" class="volver-footer" title="Contacto">↓</a>>
 
-<!--Footer-->
-    <footer id="contactos">
+ <!--Footer-->
+        <footer id="contactos">
 
-        <div class="footer">
-        <div class="comentarios">
-            <h2>Déjanos tu comentario</h2>
-            <form action="#" method="post">
-              <input type="text" name="nombre" placeholder="Nombre y Apellido" required>
-              <input type="email" name="email" placeholder="Correo electrónico" required>
-              <textarea name="mensaje" placeholder="Dejanos tu comentario" required></textarea>
-              <button type="submit">Enviar</button>
-            </form>
-          </div>
+            <div class="footer">
+            <div class="comentarios">
+               <h2>Déjanos tu comentario</h2>
+                <form action="formulario.html" method="get">
+                  <label for="nombre">Nombre y Apellido:</label>
+                 <input type="text" id="nombre" name="nombre" placeholder="Ej: Iñaki Godoy" required>
+                 <label for="email">Correo electrónico</label>
+                  <input type="email" id="email" name="email" placeholder="Ej: iñakigodoy@gmail.com" required>
+                  <label for="mensaje">Mensaje</label>
+                  <textarea name="mensaje" id="mensaje" placeholder="Dejanos tu comentario" required></textarea>
+                  <button type="submit">Enviar</button>
+                </form>
+              </div>
          
 
-           <!--Redes-->
-        <div class="redes">
-           
-            <h2>Redes Sociales</h2>
-            <ul>
-              <li>
-                <a href="https://www.facebook.com/OnePieceNetflix/" target="_blank"><img src="./img/facebook.png" alt="Facebook" /><span>Facebook</span></a>
-              </li>
-              <li>
-                <a href="https://x.com/onepiecenetflix?lang=es" target="_blank"><img src="./img/x.png" alt="Twitter" /><span>Twitter</span></a>
-              </li>
-              <li>
-                <a href="https://www.instagram.com/onepiecenetflix/?hl=es" target="_blank"><img src="./img/instagram.png" alt="Instagram" /><span>Instagram</span></a>
-              </li>
-            </ul>
-        
-        </div>
-        </div>
+         <!--Redes-->
+
+           <div id="redes">
+
+            <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" 
+            integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" 
+            crossorigin="anonymous">
+
+  <ul class="redes-lista">
+    <li><a href="https://www.facebook.com/OnePieceNetflix/" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+    <li><a href="https://x.com/onepiecenetflix?lang=es" target="_blank"><i class="fab fa-twitter"></i></a></li>
+    <li><a href="https://www.instagram.com/onepiecenetflix/?hl=es" target="_blank"><i class="fab fa-instagram"></i></a></li>
+    <li><a href="https://www.youtube.com/@Netflix" target="_blank"><i class="fab fa-youtube"></i></a></li>
+  </ul>
+</div>
 
         
         </footer>

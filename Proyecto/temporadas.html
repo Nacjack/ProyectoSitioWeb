@@ -115,8 +115,15 @@
 
 
  <!--Temporada 2-aviso-->
-    <div>
-        <h1 id="tem2">Temporada 2 !Ahora en Producción¡ </h1> 
+  <h1 id="tem2">Trailer temporada 2 </h1> 
+    <div id="video-trailer2">
+       
+
+        
+        <iframe width="500" height="300" src="https://www.youtube.com/embed/f_LaeJGRYpE?si=BY1ozm6ctQl4WbKI" 
+        title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
+        encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" 
+        allowfullscreen></iframe>
     </div>
    
 
@@ -145,39 +152,39 @@
   <!--Ir a Footer-->
      <a href="#contactos" class="volver-footer" title="Contacto">↓</a>>
 
-            <!--Footer-->
-           <footer id="contactos">
+             <!--Footer-->
+        <footer id="contactos">
 
             <div class="footer">
             <div class="comentarios">
-                <h2>Déjanos tu comentario</h2>
-                <form action="#" method="post">
-                  <input type="text" name="nombre" placeholder="Nombre y Apelllido" required>
-                  <input type="email" name="email" placeholder="Correo electrónico" required>
-                  <textarea name="mensaje" placeholder="Dejanos tu comentario" required></textarea>
+               <h2>Déjanos tu comentario</h2>
+                <form action="formulario.html" method="get">
+                  <label for="nombre">Nombre y Apellido:</label>
+                 <input type="text" id="nombre" name="nombre" placeholder="Ej: Iñaki Godoy" required>
+                 <label for="email">Correo electrónico</label>
+                  <input type="email" id="email" name="email" placeholder="Ej: iñakigodoy@gmail.com" required>
+                  <label for="mensaje">Mensaje</label>
+                  <textarea name="mensaje" id="mensaje" placeholder="Dejanos tu comentario" required></textarea>
                   <button type="submit">Enviar</button>
                 </form>
               </div>
              
 
-             <!--Barra de Navegación-->
+              <!--Redes-->
 
-            <div class="redes">
-               
-                <h2>Redes Sociales</h2>
-                <ul>
-                  <li>
-                    <a href="https://www.facebook.com/OnePieceNetflix/" target="_blank"><img src="./img/facebook.png" alt="Facebook" /><span>Facebook</span></a>
-                  </li>
-                  <li>
-                    <a href="https://x.com/onepiecenetflix?lang=es" target="_blank"><img src="./img/x.png" alt="Twitter" /><span>Twitter</span></a>
-                  </li>
-                  <li>
-                    <a href="https://www.instagram.com/onepiecenetflix/?hl=es" target="_blank"><img src="./img/instagram.png" alt="Instagram" /><span>Instagram</span></a>
-                  </li>
-                </ul>
-            
-            </div>
+           <div id="redes">
+
+            <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" 
+            integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" 
+            crossorigin="anonymous">
+
+  <ul class="redes-lista">
+    <li><a href="https://www.facebook.com/OnePieceNetflix/" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+    <li><a href="https://x.com/onepiecenetflix?lang=es" target="_blank"><i class="fab fa-twitter"></i></a></li>
+    <li><a href="https://www.instagram.com/onepiecenetflix/?hl=es" target="_blank"><i class="fab fa-instagram"></i></a></li>
+    <li><a href="https://www.youtube.com/@Netflix" target="_blank"><i class="fab fa-youtube"></i></a></li>
+  </ul>
+</div>
             </div>
             
             </footer>

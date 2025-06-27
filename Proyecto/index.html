@@ -8,6 +8,9 @@
     <title>One Piece Live Action</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" href="./img/Icono.ico">
+    <style>
+      
+    </style>
 
 </head>
 
@@ -53,7 +56,6 @@
        encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" 
        allowfullscreen></iframe>
        <figcaption><b>Trailer Oficial</b></figcaption>
-       
     </figure>
 
 
@@ -71,35 +73,33 @@
             <div class="footer">
             <div class="comentarios">
                 <h2>Déjanos tu comentario</h2>
-                <form action="#" method="post">
-                  <input type="text" name="nombre" placeholder="Nombre y Apelllido" required>
-                  <input type="email" name="email" placeholder="Correo electrónico" required>
-                  <textarea name="mensaje" placeholder="Dejanos tu comentario" required></textarea>
+                <form action="formulario.html" method="get">
+                  <label for="nombre">Nombre y Apellido:</label>
+                 <input type="text" id="nombre" name="nombre" placeholder="Ej: Iñaki Godoy" required>
+                 <label for="email">Correo electrónico</label>
+                  <input type="email" id="email" name="email" placeholder="Ej: iñakigodoy@gmail.com" required>
+                  <label for="mensaje">Mensaje</label>
+                  <textarea name="mensaje" id="mensaje" placeholder="Dejanos tu comentario" required></textarea>
                   <button type="submit">Enviar</button>
                 </form>
               </div>
              
 
         <!--Redes-->
-            <div class="redes">
-               
-                <h2>Redes Sociales</h2>
-                <ul>
-                  <li>
-                    <a href="https://www.facebook.com/OnePieceNetflix/" target="_blank"><img src="./img/facebook.png" alt="Facebook" /><span>Facebook</span></a>
-                  </li>
-                  <li>
-                    <a href="https://x.com/onepiecenetflix?lang=es" target="_blank"><img src="./img/x.png" alt="Twitter" /><span>Twitter</span></a>
-                  </li>
-                  <li>
-                    <a href="https://www.instagram.com/onepiecenetflix/?hl=es" target="_blank"><img src="./img/instagram.png" alt="Instagram" /><span>Instagram</span></a>
-                  </li>
-                </ul>
-            
-            </div>
-            </div>
-            
-            </footer>
+
+           <div id="redes">
+
+            <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" 
+            integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" 
+            crossorigin="anonymous">
+
+  <ul class="redes-lista">
+    <li><a href="https://www.facebook.com/OnePieceNetflix/" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+    <li><a href="https://x.com/onepiecenetflix?lang=es" target="_blank"><i class="fab fa-twitter"></i></a></li>
+    <li><a href="https://www.instagram.com/onepiecenetflix/?hl=es" target="_blank"><i class="fab fa-instagram"></i></a></li>
+    <li><a href="https://www.youtube.com/@Netflix" target="_blank"><i class="fab fa-youtube"></i></a></li>
+  </ul>
+</div>
 
 </body>
 
