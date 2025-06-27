@@ -753,6 +753,7 @@ footer {
   border: none;
   border-radius: 15px;
   cursor: pointer;
+  transition: ease 0.5s;
 }
 
 .comentarios button:hover {
