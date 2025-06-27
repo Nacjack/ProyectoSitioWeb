@@ -29,10 +29,8 @@ body{
 .header{
   background-color: rgba(31, 31, 31, 0.582);
   display: flex;
-  justify-content: flex-end;
   align-items: center;
   height: 9vh;
-  width: 100vw;
   padding: 5 10%;
 
     
@@ -93,7 +91,7 @@ body{
   display: flex;
   position: relative;
   align-items: center;
-    width: 100vw;
+    width: 98.7vw;
     height: 100vh;
     z-index: -1;
   
