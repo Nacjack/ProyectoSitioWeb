@@ -136,6 +136,7 @@ body{
   justify-content:center;
   margin-top: 8%;
   margin-left: 10%;
+  font-size: 30px;
 
   
   
@@ -150,7 +151,7 @@ body{
 }
 .serie img{
   display: flex;
-  width: 90vw;
+  width: 70vw;
   justify-content:center;
   margin-top: 1%;
    
@@ -162,6 +163,7 @@ body{
   justify-content:center;
   margin-top: 8%;
   margin-left: 10%;
+  font-size: 30px;
 
 }
 .productores  p{
@@ -576,7 +578,11 @@ body{
   max-width: 400px;
   height: auto;
   border-radius: 12px;
-  box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
+  transition: ease 0.5s;
+}
+.evento-imagen img:hover {
+transform: scale(1.1);
+box-shadow: 5px 10px 50px rgb(255, 255, 255);
 }
 
 .evento-texto {
@@ -653,18 +659,33 @@ body{
   height: 130px;
   object-fit: cover;
   border-radius: 10px;
+  transition: ease 0.5s;
+}
+#oda:hover{
+  transform: scale(1.1);
+box-shadow: 5px 10px 50px rgb(255, 255, 255);
 }
 #merry{
   width: 305px;
   height: 130px;
   object-fit: cover;
   border-radius: 10px;
+  transition: ease 0.5s;
+}
+#merry:hover{
+  transform: scale(1.1);
+box-shadow: 5px 10px 50px rgb(255, 255, 255);
 }
 #garp{
   width: 305px;
   height: 130px;
   object-fit: cover;
   border-radius: 10px;
+  transition: ease 0.5s;
+}
+#garp:hover{
+  transform: scale(1.1);
+box-shadow: 5px 10px 50px rgb(255, 255, 255);
 }
 
 
