@@ -29,9 +29,11 @@ body{
 .header{
   background-color: rgba(31, 31, 31, 0.582);
   display: flex;
+  justify-content: flex-end;
   align-items: center;
-  height: 9vh;
-  padding: 5 10%;
+  height: 4rem;
+  width: 100%;
+  padding: 5;
 
     
 }
@@ -40,12 +42,13 @@ body{
     cursor: pointer;
     margin-right: auto;
     margin-left: 1%;
-    margin-top: 10px;
+    margin-top: 1%;
 }
 
 .header .logo img{
-    height: 10vh;
-    width: 8vw;
+   
+    width: auto;
+    max-width: 120px;
     transition: all 0.3s;
 }
 
@@ -78,6 +81,59 @@ body{
     color: rgb(129, 129, 129);
 }
 
+#menu-toggle {
+  display: none;
+}
+
+
+@media (max-width: 768px) {
+.header {
+    flex-wrap: wrap;
+    justify-content: left;
+    height: auto;
+    padding: 0.5rem 1rem;
+  }
+
+  
+  .menu-boton {
+    display: block;
+    cursor: pointer;
+    font-size: 1.2rem;
+    color: #eceff1;
+    background: transparent;
+    border: none;
+    padding: 0 0px;
+    width: 100%;
+    text-align: left;
+  }
+
+
+  .header .nav-links {
+    width: 100%;
+    display: none;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+  }
+
+  .header .logo {
+    margin: 0 auto 10px auto;  
+  }
+
+  .header .nav-links li {
+    display: block;
+    padding: 10px 0;
+    background: transparent;
+  }
+
+  #menu-toggle:checked + .menu-boton + nav .nav-links {
+    display: flex;
+  }
+}
+
+
+
+
 
 
 
@@ -91,27 +147,44 @@ body{
   display: flex;
   position: relative;
   align-items: center;
-    width: 98.7vw;
-    height: 100vh;
-    z-index: -1;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
   
 }
 
 .trailer{
   display: flex;
-  position: absolute;
-  align-items: center;
-  flex-direction: column-reverse;
-  padding: 5px;
-  top: 50%;
-  left: -25%;
-  height: 20%;
-  width: 80%;
-  object-fit: cover;
+  position:relative;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+margin: 20px;
+text-align: center;
+
+}
+.trailer iframe{
+ width: 100%;
+  max-width: 560px;
+  aspect-ratio: 16 / 9;
+  border: none;
+  z-index: 0;
+
 }
 .trailer figcaption{
+  position: relative;
+  top: -2rem;
   color: white;
-  margin-top: -2%;
+  font-size: 1.5rem;
+  font-weight: bold;
+  z-index:-1;
+  background: rgba(0, 0, 0, 0.6); 
+  padding: 8px 16px;
+  border-radius: 8px;
+
+
+ 
+  
 }
 
 
@@ -125,65 +198,58 @@ body{
   align-items: center;
   justify-content:center;
   flex-direction:column;
+  text-align: center;
 
 }
 .serie h1{
-  display: flex;
   color: white;
-  width: 70vw;
-  justify-content:center;
-  margin-top: 8%;
-  margin-left: 10%;
   font-size: 30px;
+  margin-top: 8%;
 
   
   
 }
 .serie p{
-  color: white;
-  width: 70vw;
-  justify-content:center;
-  margin-top: 1%;
-  margin-left: 10%;
+ color: white;
+  margin-top: 1rem;
+  padding:2rem 2rem;
 
 }
 .serie img{
   display: flex;
-  width: 70vw;
+  width: 100%;
+  max-width: 700px;
   justify-content:center;
   margin-top: 1%;
+  margin-left: auto;
+  margin-right: auto;
    
 }
 .productores  h1{
-   display: flex;
-  color: white;
-  width: 70vw;
-  justify-content:center;
-  margin-top: 8%;
-  margin-left: 10%;
+ color: white;
   font-size: 30px;
-
+  margin-top: 8%;
 }
 .productores  p{
- color: white;
-  width: 70vw;
-  justify-content:center;
-  margin-top: 5%;
-  margin-left: 10%;
+color: white;
+  margin-top: 1rem;
+  padding:2rem 2rem;
 
 }
 .productores img{
    display: flex;
-  width: 70vw;
+  width: 100%;
+  max-width: 600px;
   justify-content:center;
   margin-top: 5%;
+  margin-left: auto;
+  margin-right: auto;
    
 }
 
 #musica-fondo{
-  display:block;
-  position: fixed;
-  top: 5%;
+ display: flex;
+ justify-content: center;
   width: 260px;
   height: 100px;
   z-index: 999;
@@ -191,6 +257,29 @@ body{
 }
 
 
+@media (max-width: 768px) {
+  .serie h1,
+  .productores h1 {
+    font-size: 24px;
+    margin-top: 12%;
+  }
+
+  .serie p,
+  .productores p {
+    font-size: 16px;
+    padding: 1rem;
+  }
+
+  .serie img,
+  .productores img {
+    width: 90%;
+    margin-top: 3%;
+  }
+
+  #musica-fondo {
+    width: 100%;
+}
+}
 
 
 
@@ -503,6 +592,7 @@ body{
 }
 .capitulo img{
   width: 30%;
+
   height: auto;
   border-radius: 10px;
   transition: ease 0.5s;
@@ -537,12 +627,58 @@ body{
   display: flex;
   justify-content: center;
   margin-bottom: 5%;
-    transition: ease 0.5s;
 }
-#video-trailer2:hover{
-  transform: scale(1.7);
+#trailer2-iframe{
+  height: 300px;
+  width: 500px;
+}
+
+
+
+@media (max-width: 768px) {
+  .capitulo {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .capitulo img {
+    width: 90%;
+  }
+
+  .capitulo-contenido {
+    padding: 0;
+  }
+
+  .capitulo-contenido h2 {
+    font-size: 20px;
+  }
+
+  .capitulo-contenido p {
+    font-size: 16px;
+  }
+
+  #tem2 {
+    font-size: 24px;
+    line-height: 1.5;
+    text-align: center;
+  }
+
+  #video-trailer2 {
+    flex-direction: column;
+    width: 100%;
+    padding: 0 10px;
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+ #trailer2-iframe{
+  height: max-content;
+  width: 100%;
+ }
 
 }
+
+
 
 
 
@@ -598,28 +734,97 @@ box-shadow: 5px 10px 50px rgb(255, 255, 255);
   line-height: 1.6;
   text-align: justify;
 }
+
+@media (max-width: 768px) {
+  .eventos {
+    padding: 40px 10px;
+  }
+
+  .titulo-eventos {
+    font-size: 2rem;
+    margin-bottom: 40px;
+  }
+
+  .evento-imagen {
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+  }
+
+  .evento-imagen img {
+    max-width: 90%;
+    height: auto;
+  }
+
+  .evento-texto {
+    max-width: 100%;
+    padding: 0 15px;
+  }
+
+  .evento-texto h2 {
+    font-size: 1.8rem;
+  }
+
+  .evento-texto p {
+    font-size: 1rem;
+    text-align: center;
+  }
+}
+
+
 /*Entrevistas Configuración*/
 .entrevista {
   background-color: #000000;
   color: white;
   padding: 50px 20px;
+  text-align: center;
 }
 
 .titulo-entrevista {
-  text-align: center;
   font-size: 2.5rem;
-  margin-bottom: 80px;
+  margin-bottom: 3rem;
 }
 
 #videos {
-  display: block;
- margin-left: 7%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+#videos iframe {
+  width: 100%;
+  max-width: 560px;
+  height: 315px;
+  border: none;
 }
 
 .entrevista p {
   font-size: 1.1rem;
-  line-height: 1.4;
+  line-height: 1.6;
+  max-width: 800px;
+  margin: 2rem auto 0 auto;
   text-align: justify;
+  padding: 0 1rem;
+}
+
+@media (max-width: 768px) {
+  .titulo-entrevista {
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+  }
+
+  #videos iframe {
+    height: auto;
+    aspect-ratio: 16 / 9;
+  }
+
+  .entrevista p {
+    font-size: 1rem;
+    text-align: left; 
+  }
 }
 
 /*Curiodidades Configuración*/
@@ -687,6 +892,62 @@ box-shadow: 5px 10px 50px rgb(255, 255, 255);
 }
 
 
+@media (max-width: 768px) {
+  .curiosidad {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .curiosidad p {
+    font-size: 1rem;
+    padding: 0 0px;
+    text-align: center;
+  }
+
+  #oda,
+  #merry,
+  #garp {
+    width: 80%;
+    height: auto;
+  }
+
+  .titulo-curiosidades {
+    font-size: 2rem;
+    margin-bottom: 40px;
+  }
+
+  .curiosidades {
+    @media (max-width: 768px) {
+  .curiosidad {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .curiosidad p {
+    font-size: 1rem;
+    padding: 0 10px;
+    text-align: center;
+  }
+
+  #oda,
+  #merry,
+  #garp {
+    width: 90%;
+    height: auto;
+  }
+
+  .titulo-curiosidades {
+    font-size: 2rem;
+    margin-bottom: 40px;
+  }
+
+  .curiosidades {
+    padding: 40px 10px;
+  }
+}
+  }
+}
+
 
 
 
@@ -699,7 +960,9 @@ box-shadow: 5px 10px 50px rgb(255, 255, 255);
 footer {
   background-color: rgba(31, 31, 31, 0.582);
   color: white;
-  padding: 40px 80px;
+  padding: 1rem;
+  margin: 0;
+  width: 100%;
 }
 
 .footer {
@@ -707,6 +970,16 @@ footer {
   justify-content: space-between;
   align-items: flex-start;
 }
+
+@media (max-width: 768px) {
+  .footer {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+  }
+}
+
 
 
 
@@ -716,6 +989,7 @@ footer {
 
 .comentarios {
   flex: 1;
+  width: 100%;
   max-width: 600px;
 }
 
@@ -751,7 +1025,6 @@ footer {
   border: none;
   border-radius: 15px;
   cursor: pointer;
-  transition: ease 0.5s;
 }
 
 .comentarios button:hover {
@@ -804,9 +1077,6 @@ footer {
 
 
 
-
-
-
 /*Boton para volver a inicio*/
 .boton {
   position: absolute;
@@ -826,3 +1096,8 @@ footer {
     .boton:hover {
       background-color: #9faa03;
     }
+
+
+
+
+

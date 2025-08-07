@@ -9,12 +9,14 @@
 
 #redes .redes-lista {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;    
   align-items: center;        
-  gap: 20px;                  
+  gap: 1rem;                  
   margin: 0;
   padding: 40px 0;            
   list-style: none;
+  max-width: 100%;
 }
 
 
@@ -69,3 +71,24 @@
 #redes .redes-lista li:nth-child(2) a::before { background: #55acee; }
 #redes .redes-lista li:nth-child(3) a::before { background: linear-gradient(rgb(207, 4, 207), yellow); }
 #redes .redes-lista li:nth-child(4) a::before { background: #ff000d; }
+
+
+
+@media (max-width: 768px) {
+  #redes .redes-lista {
+    padding: 20px 0;
+    gap: 0.8rem;
+  }
+
+  #redes .redes-lista a {
+    width: 60px;
+    height: 60px;
+    font-size: 28px;
+    line-height: 60px;
+  }
+
+  #redes .redes-lista i {
+    font-size: 28px;
+  }
+}
+
