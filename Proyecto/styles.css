@@ -84,6 +84,9 @@ body{
 #menu-toggle {
   display: none;
 }
+.menu-boton{
+  display: none;
+}
 
 
 @media (max-width: 768px) {
